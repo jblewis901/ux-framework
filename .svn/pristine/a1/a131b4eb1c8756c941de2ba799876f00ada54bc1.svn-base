@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USPS Glyph Cheatsheet</title>
+<link href="usps-bootstrap/dist/usps.bootstrap-4.0.0.css" rel="stylesheet">
+<link href="usps-bootstrap/dist/usps.styles.css" rel="stylesheet">
+<link href="usps-glyphs/dist/usps.glyphs.css" rel="stylesheet">
+<style>
+	.ug-preview { margin: 0 auto; }
+	.ug-preview ul { list-style: none; padding-left: 0; }
+	.ug-preview li {
+		background: #ededed;
+		border: 1px solid white;
+		border-radius: 8px;
+		cursor: normal;
+		float: left;
+		font-size: 2rem;
+		height: 100px;
+		line-height: 1.4;
+		padding: 10px;
+		text-align: center;
+		width: 12.5%;
+		transition: all 0.2s ease;
+	}
+	.ug-preview li.inactive {
+		opacity: 0.5;
+	}
+	.ug-preview li:not(.inactive):hover {
+		background: #d6d6d6;
+		color: #333366;
+		cursor: pointer;
+	}
+	.ug-preview li div {
+		font-family: "Lucida Console", Monaco, monospace;
+		font-size: 0.35em;
+	}
+	@-webkit-keyframes click_animation {
+		from { background: #333366; }
+		to { background: #d6d6d6; }
+	}
+	.user-select {
+		animation: click_animation 0.5s ease;
+	}
+	.check-finished {
+		background: yellow;
+	}
+</style>
+</head>
+
+<body>
+<!--********Nav Beginning********-->
+<header style="display: none">
+	<nav class="navbar navbar-usps fixed-top navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="./demo-usps-bootstrap.html">
+			<img src="usps-bootstrap/dist/imgs/postal-eagle.svg" alt="">
+			<strong class="align-middle">
+				USPS Glyphs
+				<sup>V1.0.0</sup>
+			</strong>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+			<span>Class Name Preview:&nbsp;</span>
+			<strong id="textPreview" class="navbar-text"></strong>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="./demo-usps-glyphs.html">Back to USPS Glyphs</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<!--********Nav End********-->
+
+<main class="container mt-4">
+
+	<section id="cheat" class="ug-preview">
+		<p>
+			<strong>Click on one of the icons, and a basic span will be saved in your clipboard.</strong>
+		</p>
+		<div class="input-group mb-4">
+			<div class="input-group-prepend">
+				<span class="input-group-text">Search by Name</span>
+			</div>
+			<input type="text" id="search" class="form-control" >
+		</div>
+		<ul>
+			<li><span class="ug ug-mailbox-group"></span></li>
+			<li><span class="ug ug-plus"></span></li>
+			<li><span class="ug ug-parachute-box"></span></li>
+			<li><span class="ug ug-warning"></span></li>
+			<li><span class="ug ug-danger"></span></li>
+			<li><span class="ug ug-map-area"></span></li>
+			<li><span class="ug ug-arrow-down"></span></li>
+			<li><span class="ug ug-arrow-left"></span></li>
+			<li><span class="ug ug-arrow-right"></span></li>
+			<li><span class="ug ug-arrow-up"></span></li>
+			<li><span class="ug ug-asset-439"></span></li>
+			<li><span class="ug ug-continue"></span></li>
+			<li><span class="ug ug-reset"></span></li>
+			<li><span class="ug ug-history"></span></li>
+			<li><span class="ug ug-mailbox-cbu"></span></li>
+			<li><span class="ug ug-medal"></span></li>
+			<li><span class="ug ug-barcode"></span></li>
+			<li><span class="ug ug-bookmark"></span></li>
+			<li><span class="ug ug-box"></span></li>
+			<li><span class="ug ug-breadcrumb"></span></li>
+			<li><span class="ug ug-calendar"></span></li>
+			<li><span class="ug ug-cancel"></span></li>
+			<li><span class="ug ug-angle-down"></span></li>
+			<li><span class="ug ug-angle-left"></span></li>
+			<li><span class="ug ug-angle-right"></span></li>
+			<li><span class="ug ug-angle-up"></span></li>
+			<li><span class="ug ug-check"></span></li>
+			<li><span class="ug ug-clipboard"></span></li>
+			<li><span class="ug ug-cloud"></span></li>
+			<li><span class="ug ug-mailbox-collection"></span></li>
+			<li><span class="ug ug-copyright"></span></li>
+			<li><span class="ug ug-mailbox-curbside"></span></li>
+			<li><span class="ug ug-sync"></span></li>
+			<li><span class="ug ug-database"></span></li>
+			<li><span class="ug ug-scanner"></span></li>
+			<li><span class="ug ug-map-signs"></span></li>
+			<li><span class="ug ug-exchange-v"></span></li>
+			<li><span class="ug ug-exchange-h"></span></li>
+			<li><span class="ug ug-map-district"></span></li>
+			<li><span class="ug ug-file"></span></li>
+			<li><span class="ug ug-files"></span></li>
+			<li><span class="ug ug-caret-down"></span></li>
+			<li><span class="ug ug-download"></span></li>
+			<li><span class="ug ug-postal-eagle"></span></li>
+			<li><span class="ug ug-postal-eagle-square"></span></li>
+			<li><span class="ug ug-edit"></span></li>
+			<li><span class="ug ug-envelope"></span></li>
+			<li><span class="ug ug-excel"></span></li>
+			<li><span class="ug ug-sign-out"></span></li>
+			<li><span class="ug ug-external-link"></span></li>
+			<li><span class="ug ug-factory"></span></li>
+			<li><span class="ug ug-forward"></span></li>
+			<li><span class="ug ug-mailbox-fav"></span></li>
+			<li><span class="ug ug-filter"></span></li>
+			<li><span class="ug ug-fire"></span></li>
+			<li><span class="ug ug-flag"></span></li>
+			<li><span class="ug ug-cog"></span></li>
+			<li><span class="ug ug-return"></span></li>
+			<li><span class="ug ug-bars"></span></li>
+			<li><span class="ug ug-hand"></span></li>
+			<li><span class="ug ug-eye-slash"></span></li>
+			<li><span class="ug ug-image"></span></li>
+			<li><span class="ug ug-book-info"></span></li>
+			<li><span class="ug ug-info"></span></li>
+			<li><span class="ug ug-layer-group"></span></li>
+			<li><span class="ug ug-caret-left"></span></li>
+			<li><span class="ug ug-link"></span></li>
+			<li><span class="ug ug-mailbox"></span></li>
+			<li><span class="ug ug-map"></span></li>
+			<li><span class="ug ug-map-marker"></span></li>
+			<li><span class="ug ug-map-marker-alt"></span></li>
+			<li><span class="ug ug-mailbox-centralized"></span></li>
+			<li><span class="ug ug-mailbox-group-alt"></span></li>
+			<li><span class="ug ug-minus"></span></li>
+			<li><span class="ug ug-new"></span></li>
+			<li><span class="ug ug-ban"></span></li>
+			<li><span class="ug ug-pause"></span></li>
+			<li><span class="ug ug-map-marker-pharmacy"></span></li>
+			<li><span class="ug ug-plane"></span></li>
+			<li><span class="ug ug-play"></span></li>
+			<li><span class="ug ug-mailbox-centralized-postal"></span></li>
+			<li><span class="ug ug-barcode-postal"></span></li>
+			<li><span class="ug ug-postal-inspection"></span></li>
+			<li><span class="ug ug-carrier"></span></li>
+			<li><span class="ug ug-map-marker-postal"></span></li>
+			<li><span class="ug ug-print"></span></li>
+			<li><span class="ug ug-box-cog"></span></li>
+			<li><span class="ug ug-undo"></span></li>
+			<li><span class="ug ug-backward"></span></li>
+			<li><span class="ug ug-caret-right"></span></li>
+			<li><span class="ug ug-save"></span></li>
+			<li><span class="ug ug-search"></span></li>
+			<li><span class="ug ug-server"></span></li>
+			<li><span class="ug ug-sliders-h"></span></li>
+			<li><span class="ug ug-star"></span></li>
+			<li><span class="ug ug-star-outline"></span></li>
+			<li><span class="ug ug-street-view"></span></li>
+			<li><span class="ug ug-angle-double-down"></span></li>
+			<li><span class="ug ug-angle-double-left"></span></li>
+			<li><span class="ug ug-angle-double-right"></span></li>
+			<li><span class="ug ug-angle-double-up"></span></li>
+			<li><span class="ug ug-sort"></span></li>
+			<li><span class="ug ug-traffic-light"></span></li>
+			<li><span class="ug ug-trash"></span></li>
+			<li><span class="ug ug-truck"></span></li>
+			<li><span class="ug ug-caret-up"></span></li>
+			<li><span class="ug ug-upload"></span></li>
+			<li><span class="ug ug-user"></span></li>
+			<li><span class="ug ug-book-cog"></span></li>
+			<li><span class="ug ug-book-user"></span></li>
+			<li><span class="ug ug-walking"></span></li>
+			<li><span class="ug ug-wrench"></span></li>
+			<li><span class="ug ug-times"></span></li>
+		</ul>
+	</section>
+	
+	<input type="text" value="" id="clipboard" style="display: none">
+	
+</main>
+
+	
+<!--******Scripts******-->	
+<script src="usps-bootstrap/lib/jquery-3.2.1.min.js"></script>
+<script src="usps-bootstrap/lib/popper.min.js"></script>
+<script src="usps-bootstrap/lib/bootstrap-4.0.0.js"></script>
+
+<script>
+window.onload = function() {
+	var $list = $('.ug-preview li');
+	
+	for (var i=0; i < $list.children().length; i++) {
+		var sel = '.ug-preview li:nth-of-type(' + (i+1) + ') span';
+		var className = $(sel).attr('class');
+		var ele = '<div>' + className + '</div>';
+		$(sel).after(ele);
+	}
+
+	$list.on('mouseover', function() {
+		var className = this.children[0].className;
+		console.log(className);
+		var $preview = $('#textPreview');
+		$preview.html(className);
+	});
+	$list.on('mouseout', function() {
+		var $preview = $('#textPreview');
+		$preview.html('');
+	});
+	$list.on('click', function() {
+		var className = this.children[0].className;
+		var copyText = '<span class="' + className + '"></span>';
+		var $clipboard = $('#clipboard');
+		$clipboard.css('display', 'block');
+		$clipboard.val(copyText);
+		$clipboard.select();
+		document.execCommand('copy');
+		$clipboard.css('display', 'none');
+		
+		this.className = 'user-select';
+		var $this = this;
+		setTimeout(function() {
+			$this.className = '';
+		}, 500);
+	});
+	
+	var $search = $('#search');
+	$search.on('keyup', function() {
+		var searchText = $search.val();
+		for (var i=0; i < $list.children().length; i++) {
+			var sel = '.ug-preview li:nth-of-type(' + (i+1) + ') span';
+			var className = $(sel).attr('class');
+			sel = '.ug-preview li:nth-of-type(' + (i+1) + ')'; // Divide by 2 for 2nd child
+			if (className.indexOf(searchText) > -1) {
+				$(sel).attr('class', '');
+			} else {
+				$(sel).attr('class', 'inactive');
+			}
+		}
+	});
+};
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+/*************************************************************
+ * USPS Glyphs - v1.0.0 (Feb 2019)
+ * Author: Jason Lewis, Kelsey Lawrence
+ *************************************************************/
+@font-face {
+	font-family: 'USPS Glyphs';
+	src: url('fonts/usps-glyphs.eot');
+	src: url('fonts/usps-glyphs.eot#iefix') format('embedded-opentype'),
+	     url('fonts/usps-glyphs.ttf') format('truetype'),
+	     url('fonts/usps-glyphs.woff') format('woff'),
+	     url('fonts/usps-glyphs.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.ug {
+	display: inline-block;
+	font-family: 'USPS Glyphs' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	position: relative;
+	top: .125em; /* Addresses centering issue */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.ug[ug-fx="spin"],
+.ug-spin {
+	animation: spin 4s infinite linear;
+}
+.ug[ug-fx="pulse"],
+.ug-pulse {
+	animation: spin 4s infinite steps(16);
+}
+.ug[ug-fx="spin-inv"],
+.ug-spin-inv {
+	animation: spin-inv 4s infinite linear;
+}
+.ug[ug-fx="pulse-inv"],
+.ug-pulse-inv {
+	animation: spin-inv 4s infinite steps(16);
+}
+
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+@keyframes spin-inv {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(-360deg); }
+}
+
+/* Regular icons */
+.ug-delivery-cluster-double::before { content: '\e900'; }
+.ug-plus::before { content: '\e901'; }
+.ug-delivery-internal-drop::before { content: '\e902'; }
+.ug-warning::before { content: '\e903'; }
+.ug-danger::before { content: '\e904'; }
+.ug-map-area::before { content: '\e905'; }
+.ug-arrow-down::before { content: '\e906'; }
+.ug-arrow-left::before { content: '\e907'; }
+.ug-arrow-right::before { content: '\e908'; }
+.ug-arrow-up::before { content: '\e909'; }
+.ug-delivery-other::before { content: '\e90a'; }
+.ug-redo::before { content: '\e90b'; }
+.ug-reset-alt::before { content: '\e90c'; }
+.ug-history::before { content: '\e90d'; }
+.ug-delivery-cbu::before { content: '\e90e'; }
+.ug-medal::before { content: '\e90f'; }
+.ug-barcode::before { content: '\e910'; }
+.ug-bookmark::before { content: '\e911'; }
+.ug-box::before { content: '\e912'; }
+.ug-breadcrumb::before { content: '\e913'; }
+.ug-calendar::before { content: '\e914'; }
+.ug-cancel::before { content: '\e915'; }
+.ug-angle-down::before { content: '\e916'; }
+.ug-angle-left::before { content: '\e917'; }
+.ug-angle-right::before { content: '\e918'; }
+.ug-angle-up::before { content: '\e919'; }
+.ug-check::before { content: '\e91a'; }
+.ug-clipboard::before { content: '\e91b'; }
+.ug-cloud::before { content: '\e91c'; }
+.ug-mailbox-collection::before { content: '\e91d'; }
+.ug-copyright::before { content: '\e91e'; }
+.ug-delivery-sidewalk::before { content: '\e91f'; }
+.ug-sync::before { content: '\e920'; }
+.ug-database::before { content: '\e921'; }
+.ug-scanner::before { content: '\e922'; }
+.ug-routes::before { content: '\e923'; }
+.ug-exchange-v::before { content: '\e924'; }
+.ug-exchange-h::before { content: '\e925'; }
+.ug-map-district::before { content: '\e926'; }
+.ug-file::before { content: '\e927'; }
+.ug-files::before { content: '\e928'; }
+.ug-caret-down::before { content: '\e929'; }
+.ug-download::before { content: '\e92a'; }
+.ug-postal-eagle::before { content: '\e92b'; }
+.ug-postal-eagle-square::before { content: '\e92c'; }
+.ug-edit::before { content: '\e92d'; }
+.ug-envelope::before { content: '\e92e'; }
+.ug-excel::before { content: '\e92f'; }
+.ug-sign-out::before { content: '\e930'; }
+.ug-external-link::before { content: '\e931'; }
+.ug-plant::before { content: '\e932'; }
+.ug-forward::before { content: '\e933'; }
+.ug-delivery-special::before { content: '\e934'; }
+.ug-filter::before { content: '\e935'; }
+.ug-fire::before { content: '\e936'; }
+.ug-flag::before { content: '\e937'; }
+.ug-cog::before { content: '\e938'; }
+.ug-undo::before { content: '\e939'; }
+.ug-bars::before { content: '\e93a'; }
+.ug-hand::before { content: '\e93b'; }
+.ug-eye-slash::before { content: '\e93c'; }
+.ug-image::before { content: '\e93d'; }
+.ug-book-info::before { content: '\e93e'; }
+.ug-info::before { content: '\e93f'; }
+.ug-layer-group::before { content: '\e940'; }
+.ug-caret-left::before { content: '\e941'; }
+.ug-link::before { content: '\e942'; }
+.ug-delivery-mailbox::before { content: '\e943'; }
+.ug-map::before { content: '\e944'; }
+.ug-map-marker::before { content: '\e945'; }
+.ug-map-marker-alt::before { content: '\e946'; }
+.ug-delivery-centralized::before { content: '\e947'; }
+.ug-delivery-cluster-multiple::before { content: '\e948'; }
+.ug-minus::before { content: '\e949'; }
+.ug-new::before { content: '\e94a'; }
+.ug-ban::before { content: '\e94b'; }
+.ug-pause::before { content: '\e94c'; }
+.ug-map-marker-pharmacy::before { content: '\e94d'; }
+.ug-plane::before { content: '\e94e'; }
+.ug-play::before { content: '\e94f'; }
+.ug-delivery-pobox::before { content: '\e950'; }
+.ug-barcode-postal::before { content: '\e951'; }
+.ug-postal-inspection::before { content: '\e952'; }
+.ug-delivery-truck::before { content: '\e953'; }
+.ug-map-marker-postal::before { content: '\e954'; }
+.ug-print::before { content: '\e955'; }
+.ug-box-cog::before { content: '\e956'; }
+.ug-reset::before { content: '\e957'; }
+.ug-backward::before { content: '\e958'; }
+.ug-caret-right::before { content: '\e959'; }
+.ug-save::before { content: '\e95a'; }
+.ug-server::before { content: '\e95c'; }
+.ug-search::before { content: '\e95b'; }
+.ug-sliders-h::before { content: '\e95d'; }
+.ug-star::before { content: '\e95e'; }
+.ug-star-outline::before { content: '\e95f'; }
+.ug-street-view::before { content: '\e960'; }
+.ug-angle-double-down::before { content: '\e961'; }
+.ug-angle-double-left::before { content: '\e962'; }
+.ug-angle-double-right::before { content: '\e963'; }
+.ug-angle-double-up::before { content: '\e964'; }
+.ug-sort::before { content: '\e965'; }
+.ug-traffic-light::before { content: '\e966'; }
+.ug-trash::before { content: '\e967'; }
+.ug-truck::before { content: '\e968'; }
+.ug-caret-up::before { content: '\e969'; }
+.ug-upload::before { content: '\e96a'; }
+.ug-user::before { content: '\e96b'; }
+.ug-book-cog::before { content: '\e96c'; }
+.ug-book-user::before { content: '\e96d'; }
+.ug-walking::before { content: '\e96e'; }
+.ug-wrench::before { content: '\e96f'; }
+.ug-times::before { content: '\e970'; }

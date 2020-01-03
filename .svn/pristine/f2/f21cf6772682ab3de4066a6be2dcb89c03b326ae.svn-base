@@ -1,0 +1,214 @@
+/*************************************************************
+ * USPS Glyphs - v1.0.0 (Jan 2019)
+ * Author: Jason Lewis, Kelsey Lawrence
+ *************************************************************/
+.ug {
+	position: relative;
+	top: .125em; /* Addresses centering issue */
+}
+.ug::before {
+	background-size: 1em 1em;
+	content: ' ';
+	display: inline-block;
+	height: 1em;
+	width: 1em;
+}
+
+.ug[ug-fx="spin"]::before,
+.ug-spin::before {
+	animation: spin 4s infinite linear;
+}
+.ug[ug-fx="pulse"]::before,
+.ug-pulse::before {
+	animation: spin 1s infinite steps(8);
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	to { transform: rotate(1turn); }
+}
+
+/* Regular icons */
+
+.btn-primary:hover .ug-arrow-up::before,
+.btn-success:hover .ug-arrow-up::before,
+.btn-info:hover .ug-arrow-up::before,
+.ug-arrow-up::before { background-image: url('icons/up-arrow.svg'); }
+
+.btn-primary:hover .ug-arrow-down::before,
+.btn-success:hover .ug-arrow-down::before,
+.btn-info:hover .ug-arrow-down::before,
+.ug-arrow-down::before { background-image: url('icons/down-arrow.svg'); }
+
+.btn-primary:hover .ug-arrow-left::before,
+.btn-success:hover .ug-arrow-left::before,
+.btn-info:hover .ug-arrow-left::before,
+.ug-arrow-left::before { background-image: url('icons/left-arrow.svg'); }
+
+.btn-primary:hover .ug-arrow-right::before,
+.btn-success:hover .ug-arrow-right::before,
+.btn-info:hover .ug-arrow-right::before,
+.ug-arrow-right::before { background-image: url('icons/right-arrow.svg'); }
+
+.btn-primary:hover .ug-close::before,
+.btn-success:hover .ug-close::before,
+.btn-info:hover .ug-close::before,
+.ug-close::before { background-image: url('icons/x-button.svg'); }
+
+.btn-primary:hover .ug-gas::before,
+.btn-success:hover .ug-gas::before,
+.btn-info:hover .ug-gas::before,
+.ug-gas::before { background-image: url('icons/gas.svg'); }
+
+.btn-primary:hover .ug-gear::before,
+.btn-success:hover .ug-gear::before,
+.btn-info:hover .ug-gear::before,
+.ug-gear::before { background-image: url('icons/gear.svg'); }
+
+.btn-primary:hover .ug-save::before,
+.btn-success:hover .ug-save::before,
+.btn-info:hover .ug-save::before,
+.ug-save::before { background-image: url('icons/save-disk-2.svg'); }
+
+.btn-primary:hover .ug-search::before,
+.btn-success:hover .ug-search::before,
+.btn-info:hover .ug-search::before,
+.ug-search::before { background-image: url('icons/search.svg'); }
+
+.btn-primary:hover .ug-trash::before,
+.btn-success:hover .ug-trash::before,
+.btn-info:hover .ug-trash::before,
+.ug-trash::before { background-image: url('icons/trash.svg'); }
+
+.btn-primary:hover .ug-user::before,
+.btn-success:hover .ug-user::before,
+.btn-info:hover .ug-user::before,
+.ug-user::before { background-image: url('icons/profile-con.svg'); }
+
+/* White icons */
+
+.btn-primary .ug-arrow-up::before,
+.btn-outline-primary:hover .ug-arrow-up::before,
+.btn-outline-secondary:hover .ug-arrow-up::before,
+.btn-success .ug-arrow-up::before,
+.btn-outline-success:hover .ug-arrow-up::before,
+.btn-info .ug-arrow-up::before,
+.btn-outline-info:hover .ug-arrow-up::before,
+.btn-danger .ug-arrow-up::before,
+.btn-outline-danger:hover .ug-arrow-up::before,
+.ug-arrow-up-white::before { background-image: url('icons/up-arrow-white.svg'); }
+
+.btn-primary .ug-arrow-down::before,
+.btn-outline-primary:hover .ug-arrow-down::before,
+.btn-outline-secondary:hover .ug-arrow-down::before,
+.btn-success .ug-arrow-down::before,
+.btn-outline-success:hover .ug-arrow-down::before,
+.btn-info .ug-arrow-down::before,
+.btn-outline-info:hover .ug-arrow-down::before,
+.btn-danger .ug-arrow-down::before,
+.btn-outline-danger:hover .ug-arrow-down::before,
+.ug-arrow-down-white::before { background-image: url('icons/down-arrow-white.svg'); }
+
+.btn-primary .ug-arrow-left::before,
+.btn-outline-primary:hover .ug-arrow-left::before,
+.btn-outline-secondary:hover .ug-arrow-left::before,
+.btn-success .ug-arrow-left::before,
+.btn-outline-success:hover .ug-arrow-left::before,
+.btn-info .ug-arrow-left::before,
+.btn-outline-info:hover .ug-arrow-left::before,
+.btn-danger .ug-arrow-left::before,
+.btn-outline-danger:hover .ug-arrow-left::before,
+.ug-arrow-left-white::before { background-image: url('icons/left-arrow-white.svg'); }
+
+.btn-primary .ug-arrow-right::before,
+.btn-outline-primary:hover .ug-arrow-right::before,
+.btn-outline-secondary:hover .ug-arrow-right::before,
+.btn-success .ug-arrow-right::before,
+.btn-outline-success:hover .ug-arrow-right::before,
+.btn-info .ug-arrow-right::before,
+.btn-outline-info:hover .ug-arrow-right::before,
+.btn-danger .ug-arrow-right::before,
+.btn-outline-danger:hover .ug-arrow-right::before,
+.ug-arrow-right-white::before { background-image: url('icons/right-arrow-white.svg'); }
+
+.btn-primary .ug-close::before,
+.btn-outline-primary:hover .ug-close::before,
+.btn-outline-secondary:hover .ug-close::before,
+.btn-success .ug-close::before,
+.btn-outline-success:hover .ug-close::before,
+.btn-info .ug-close::before,
+.btn-outline-info:hover .ug-close::before,
+.btn-danger .ug-close::before,
+.btn-outline-danger:hover .ug-close::before,
+.ug-close-white::before { background-image: url('icons/x-button-white.svg'); }
+
+.btn-primary .ug-gas::before,
+.btn-outline-primary:hover .ug-gas::before,
+.btn-outline-secondary:hover .ug-gas::before,
+.btn-success .ug-gas::before,
+.btn-outline-success:hover .ug-gas::before,
+.btn-info .ug-gas::before,
+.btn-outline-info:hover .ug-gas::before,
+.btn-danger .ug-gas::before,
+.btn-outline-danger:hover .ug-gas::before,
+.ug-gas-white::before { background-image: url('icons/gas-white.svg'); }
+
+.btn-primary .ug-gear::before,
+.btn-outline-primary:hover .ug-gear::before,
+.btn-outline-secondary:hover .ug-gear::before,
+.btn-success .ug-gear::before,
+.btn-outline-success:hover .ug-gear::before,
+.btn-info .ug-gear::before,
+.btn-outline-info:hover .ug-gear::before,
+.btn-danger .ug-gear::before,
+.btn-outline-danger:hover .ug-gear::before,
+.ug-gear-white::before { background-image: url('icons/gear-white.svg'); }
+
+.btn-primary .ug-save::before,
+.btn-outline-primary:hover .ug-save::before,
+.btn-outline-secondary:hover .ug-save::before,
+.btn-success .ug-save::before,
+.btn-outline-success:hover .ug-save::before,
+.btn-info .ug-save::before,
+.btn-outline-info:hover .ug-save::before,
+.btn-danger .ug-save::before,
+.btn-outline-danger:hover .ug-save::before,
+.ug-save-white::before { background-image: url('icons/save-disk-2-white.svg'); }
+
+.btn-primary .ug-search::before,
+.btn-outline-primary:hover .ug-search::before,
+.btn-outline-secondary:hover .ug-search::before,
+.btn-success .ug-search::before,
+.btn-outline-success:hover .ug-search::before,
+.btn-primary .ug-search::before,
+.btn-info .ug-search::before,
+.btn-outline-info:hover .ug-search::before,
+.btn-danger .ug-search::before,
+.btn-outline-danger:hover .ug-search::before,
+.ug-search-white::before { background-image: url('icons/search-white-white.svg'); }
+
+.btn-primary .ug-trash::before,
+.btn-outline-primary:hover .ug-trash::before,
+.btn-outline-secondary:hover .ug-trash::before,
+.btn-success .ug-trash::before,
+.btn-outline-success:hover .ug-trash::before,
+.btn-info .ug-trash::before,
+.btn-outline-info:hover .ug-trash::before,
+.btn-danger .ug-trash::before,
+.btn-outline-danger:hover .ug-trash::before,
+.ug-trash-white::before { background-image: url('icons/trash-white.svg'); }
+
+.btn-primary .ug-user::before,
+.btn-outline-primary:hover .ug-user::before,
+.btn-outline-secondary:hover .ug-user::before,
+.btn-success .ug-user::before,
+.btn-outline-success:hover .ug-user::before,
+.btn-info .ug-user::before,
+.btn-outline-info:hover .ug-user::before,
+.btn-danger .ug-user::before,
+.btn-outline-danger:hover .ug-user::before,
+.ug-user-white::before { background-image: url('icons/profile-con-white.svg'); }
+
+
+.ug-map-pin-white::before { background-image: url('icons/map-pin-white.svg'); }
+

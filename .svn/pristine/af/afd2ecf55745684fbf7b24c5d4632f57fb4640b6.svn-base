@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>USPS Starter Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <!-- Starter Styles -->
+  <link rel="stylesheet" href="assets/lib/usps-bootstrap/dist/usps.bootstrap-4.0.0.css">
+  <link rel="stylesheet" href="assets/lib/usps-bootstrap/dist/usps.styles.css">
+  <link rel="stylesheet" href="assets/lib/usps-glyphs/dist/usps.glyphs.css">
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<!-- Site Navbar -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html" data-toggle="tooltip" data-placement="bottom" title="USPS Site Logo">
+      <img src="assets/imgs/site-logo.svg" alt="USPS Site Logo">
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#siteNavbarContent" aria-controls="siteNavbarContent" aria-expanded="false" aria-label="Toggle navbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="siteNavbarContent" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li>
+        <li id="userMenuDropdown" class="nav-item active dropdown ml-lg-4">
+          <a id="userMenuDropdownToggle" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            John Smith <span class="ug ug-user ml-1"></span>
+          </a>
+          <div id="userMenuDropdownMenu" class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenuDropdownToggle">
+            <a class="dropdown-item" href="#">Profile</a>
+            <a class="dropdown-item" href="#">Settings</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Log Out <span class="ug ug-sign-out pl-2"></span></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Main Content -->
+<main>
+  <section class="container mt-4">
+    <h1 class="text-center" usps-style="blue">USPS Starter Project</h1>
+    <hr>
+    <section id="introduction">
+      <p>
+        This demonstrates a long content page. The header and footer are not sticky. Instead, the page is utilizing flex to expand the <code>&lt;main&gt;</code> content from the rest of the body (header/footer/subheader/etc). The footer will remain on the bottom of the page, and a scrollbar will appear within main if the page content is large.
+      </p>
+      <p>
+        This page demonstrates this by adding a lot of fluff and content until we are scrolled to the bottom.
+      </p>
+    </section>
+    <button class="btn btn-block btn-warning" onclick="clone()">Click here to add new card line</button>
+    <hr>
+    <section id="demoCardRow" class="row mt-4">
+      <div class="col-sm-12">
+        <div class="card" usps-style="outline">
+          <div class="card-body">
+            <h5 class="card-title">Dummy Card</h5>
+            <p class="card-text">
+              This is a dummy card row
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</main>
+
+<!-- Site Footer -->
+<footer class="footer-usps">
+  <div class="brand-ea"></div>
+</footer>
+  
+<!-- Starter Scripts -->
+<script src="assets/lib/usps-bootstrap/lib/jquery-3.2.1.min.js"></script>
+<script src="assets/lib/usps-bootstrap/lib/popper.min.js"></script>
+<script src="assets/lib/usps-bootstrap/lib/bootstrap-4.0.0.js"></script>
+<!-- Custom Scripts -->
+<script src="assets/app-loader.js"></script>
+
+<script>
+  var i = 0;
+  var $original = document.getElementById('demoCardRow');
+  function clone() {
+    var clone = $original.cloneNode(true);
+    clone.id = 'row' + i++;
+    $original.parentNode.insertBefore(clone, $original.nextSibling);
+  }
+</script>
+
+</body>
+</html>
